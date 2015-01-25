@@ -67,9 +67,14 @@
 	.menu-icon a:hover {
 		color: #3b3b3a;
 	}
-	.menu-icon a.active {
-		color: #7f9a15!important;
+	.mobile-button {
+		width: 45px;
+		height: 45px;
+		background: url("img/menu-icon.png") no-repeat;
 	}
+	/*.menu-icon a.active {
+		color: #7f9a15!important;
+	}*/
 	.nav-menu {
 		position: absolute;
 		top: 110px;
