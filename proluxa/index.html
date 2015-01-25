@@ -160,7 +160,7 @@
 		$(document).ready(function(){
 
 			$(".mobile-button img").on("click", function(){
-				console.log($(this).src);
+				console.log(this.src);
 				$(this).src('img/menu-icon-clicked.png');
 				$(".nav-menu").fadeToggle(800);
 				// $(this).toggleClass("active");
