@@ -78,7 +78,14 @@
 		background-size: cover;
 	}
 	.mobile-button.active {
+		display: block;
+		width: 45px;
+		height: 45px;
 		background: url('img/menu-icon-clicked.png') no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 	.nav-menu {
 		position: absolute;
