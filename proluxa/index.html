@@ -160,10 +160,8 @@
 		$(document).ready(function(){
 
 			$(".mobile-button img").on("click", function(){
-				console.log(this.src);
-				$(this).attr('src', $(this).attr('src').replace('../img/menu-icon-clicked.png'));
 				$(".nav-menu").fadeToggle(800);
-				// $(this).toggleClass("active");
+				$(this).toggleClass("active");
 			});
 
 			$(".btn-top").on("click", function(){
