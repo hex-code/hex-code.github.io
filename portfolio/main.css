@@ -1,0 +1,373 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: 230px;
+	width: 100%;
+	background: #9370DB url("img/bg-5-t.png") no-repeat;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	text-align: center;
+}
+.logo {
+	color: rgba(256,256,256, .8);
+	text-shadow: 3px 2px 5px rgba(0, 0, 0, .6);
+}
+.icon > i{
+	font-size: 5em;
+	z-index: 999;
+	color: #423778;
+}
+.icon h2 {
+	margin-top: 0px;
+}
+#header ::before {
+	content: "";
+	position: absolute;
+	width: 2000px;
+	height: 200px;
+	background: #fff;
+	right: 60%;
+	top: 136px;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	transform: rotate(5deg);
+	z-index: 5;
+}
+
+#header ::after {
+	content: "";
+	position: absolute;
+	width: 2000px;
+	height: 150px;
+	background: #fff;
+	left: 27%;
+	top: 154px;
+	-webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+	-ms-transform: rotate(-4deg);
+	-o-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+	z-index: 5;
+}
+
+#header h1 a {
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 5px;
+	display: inline-block;
+	padding-top: 40px;
+	font-size: 50px;
+}
+.logo h3 {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 0px;
+	font-weight: 600;
+	letter-spacing: 6px;
+}
+.modalDiv {
+	width: 1000px;
+	height: 700px;
+	background-color: #000;
+	position: absolute;
+	z-index: 999;
+	display: none;
+	text-align: center;
+}
+.info {
+	color: #fff;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: auto;
+	background-color: rgba(0,0,0, .8);
+}
+.info > h3{
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.modalDiv:hover {
+	cursor: url('img/close.png'), pointer;
+}
+/*@media screen and (max-width: 1000px) {
+	.img-responsive:hover {
+		cursor: pointer;
+	}
+}*/
+.img-responsive {
+	padding-bottom: 20px;
+}
+.img-responsive:hover {
+	cursor: url('img/zoom.png'), pointer;
+}
+.works {
+	position: relative;
+}
+.description > p {
+	display: none;
+}
+.description > h3 {
+	display: none;
+}
+
+#more {
+	border: 2px solid #423778;
+	color: #423778;
+	font-weight: bold;
+}
+.social {
+	font-size: 2.5em;
+	display: block;
+	float: right;
+	color: #444444;
+}
+.social a {
+	/*text-decoration: none;*/
+	color: #444444;
+}
+.social a:visited {
+	text-decoration: none;
+	color: #444444;
+}
+.icon-skype:hover {
+	color: #00aff0;
+}
+.icon-vkontakte:hover {
+	color: #4c75a3;
+}
+.icon-linkedin:hover {
+	color: #0177b5;
+}
+.icon-facebook:hover {
+	color: #3b5998;
+}
+.show-info {
+	cursor: pointer;
+}
+.skype {
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #00aff0;
+	display: none;
+}
+
+#footer {
+	overflow: hidden;
+	position: relative;
+	height: 160px;
+	background: url("img/bg-5-t.png") #009ACD;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	z-index: 10;
+	/*padding: 80px;*/
+	text-align: center;*/
+}
+
+#footer ::before {
+	content: "";
+	position: absolute;
+	width: 2000px;
+	height: 200px;
+	background: #fff;
+	right: 15%;
+	top: -130px;
+	-webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+	-ms-transform: rotate(-4deg);
+	-o-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+	z-index: 5;
+}
+
+#footer ::after {
+	content: "";
+	position: absolute;
+	width: 2000px;
+	height: 150px;
+	background: #fff;
+	left: 60%;
+	top: -60px;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	transform: rotate(5deg);
+	z-index: 5;
+}
+
+
+.control-prev, .control-next{
+	position: relative;
+	top: 50%;
+	font-size: 40px;
+}
+
+.control a {
+	height: 100%;
+	display: block;
+	color: #444444;
+}
+.control a:visited {
+	color: #444444;
+}
+.control a:hover {
+	opacity: 1;
+	background: rgba(255,255,255, .1);
+	color: #fff;
+}
+.control {
+	position: absolute;
+	display: block;
+	top: 0;
+	z-index: 3;
+	width: 150px;
+	height: 100%;
+	opacity: .5;
+	-webkit-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
+}
+@media screen and (max-width: 700px) {
+	.control {
+		width: 80px;
+	}
+}
+
+.right {
+	right: 0;
+}
+.control:hover {
+	opacity: 1;
+	background: rgba(255,255,255, .1);
+	color: #fff;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	display: inline-block;
+}
+
+.slider-list {
+	position: relative;
+	width: 100%;
+	margin-bottom: 0px;
+	/*list-style: none;*/
+}
+.slider-wrapper {
+	position: relative;
+}
+.slider-list li {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.slider-list li img {
+	width: 100%;
+	display: block;
+}
+
+.slider-list li.active {
+	z-index: 1;
+	position: relative;
+}
+
+.slider-list li.inslide {
+	z-index: 1;
+}
+
+.dots-list {
+	width: 100%;
+	position: absolute;
+	bottom: 25px;
+	z-index: 3;
+}
+.dots-item {
+	margin: 0 4px;
+	width: 15px;
+	height: 15px;
+	background: rgba(6,6,6, .1);
+	border-radius: 50%;
+	border: 2px solid rgba(255,255,255, 1);
+	cursor: pointer;
+}
+/*.dots-item a {
+	display: block;
+	border-radius: 50%;
+	background: #666;
+	border-radius: 50%;
+	border: 2px solid rgba(255,255,255, .6);
+}*/
+/*.dots-item a:hover {
+	background: #fff;
+	border: 2px solid rgba(0,0,0, .6);
+}*/
+.dots-item.current {
+	background: #fff;
+	border: 2px solid rgba(0,0,0, .6);
+}
+
+
+.arrow-up {
+	position: fixed;
+	display: none;
+	border: 2px solid #ccc;
+	font-size: 40px;
+	bottom: 17%;
+	right: 2%;
+	z-index: 3;
+	opacity: .9;
+}
+
+.arrow-up:hover {
+	cursor: pointer;
+}
+
+
+
+/*.wraper {
+	position: relative;
+	overflow: hidden;
+	width: 40%;
+	display: inline-block;
+}
+.slider {
+	position: relative;
+	list-style: none;
+	width: 100%;
+	height: auto;
+}
+.slider li {
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+.slider img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+*/
