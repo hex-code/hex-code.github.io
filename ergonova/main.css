@@ -1,0 +1,305 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body h1 {
+	color: #706d6a;
+}
+
+body {
+	font-family: Arial, Tahoma, sans-serif!important;
+	width: 100%;
+	background-color: #fff;
+}
+.main-menu {
+	position: relative;
+	top: -19px;
+	list-style: none;
+	height: 100%;
+
+}
+
+.main-menu li {
+	display: inline-block;
+	height: 100%;
+	top: -15px;
+	margin-right: 65px;
+}
+
+.logo {
+	position: relative;
+	top: 19px;
+	margin: 0 165px!important;
+}
+
+.last {
+	margin-right: 0!important;
+}
+
+.main-menu li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #37312b;
+	height: 115px;
+	font-weight: bold;
+	line-height: 100px;
+}
+
+.main-menu li a:hover {
+	border-bottom: 5px solid #57bdf3;
+}
+
+.main-menu li.active {
+	border-bottom: 5px solid #57bdf3;
+}
+.header {
+	margin-top: 20px;
+	background-color: #eeefe9;
+	height: 115px;
+}
+
+.header-menu {
+	list-style: none;
+	margin: 35px 95px 0;
+}
+
+.header-menu li {
+	display: inline;
+	/*margin-right: 20px;*/
+}
+
+.header-menu li a {
+	text-decoration: underline;
+	color: #37312b;
+	padding: 7px;
+}
+
+.header-menu li a:hover {
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	padding: 8px;
+	box-shadow: 2px 2px 2px #acacac;
+}
+
+.header-menu li a.active {
+	border: 1px solid #e0e0e0;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 8px;
+	box-shadow: 2px 2px 2px #acacac;
+}
+
+.separator {
+	padding: 0 12px;
+}
+
+.sample, .sample-content {
+	margin: 55px 0 0 0;
+	height: 600px;
+}
+.sample {
+	background: url("img/photo-1.png") no-repeat;
+}
+
+.icon-star-2 {
+	font-size: 32px;
+	color: #afd100;
+}
+
+.company-name {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 88px;
+	color: #a3ca05;
+}
+
+.description {
+	font-size: 35px;
+	color: #37312b;
+}
+
+.price {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.buttons {
+	padding-top: 15px;
+	text-decoration: none!important;
+	color:black;
+	height: 52px;
+	width: 245px;
+	display: block;
+	background: url('img/btn.png') no-repeat;
+}
+
+.buttons:hover, .buttons:focus {
+	text-decoration: none;
+	color: #809111;
+	background: url('img/btn-active.png');
+}
+
+.but-active {
+	background: url('img/btn-active.png');
+	color: white!important;
+	text-shadow: 1px 1px 1px #809111;
+}
+
+.text {
+	color: #118ed0;
+	font-size: 17px;
+	line-height: 18px;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	padding-top: 6px;
+}
+
+.bus, .tools {
+	margin-right: 25px;
+}
+
+.bus {
+	margin-bottom: 10px;
+}
+
+.but-info {
+	font-size: 21px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #809111;
+	letter-spacing: 0.4px;
+}
+
+.but-info2 {
+	font-size: 21px;
+	font-weight: bold;
+	padding-top: 10px;
+	color: #809111;
+}
+
+.but-info3 {
+	font-size: 13px;
+	font-weight: bold;
+	color: #809111;
+	letter-spacing: 0.4px;
+}
+
+.chapter-2 {
+	height: 500px;
+	background: url('img/bg-ch3.png') no-repeat #f2f2f2;
+}
+
+.about {
+	margin-top: 150px;
+}
+
+.about-header {
+	color: #706d6a;
+	font-weight: bold;
+}
+
+.about-info {
+	line-height: 26px;
+	color: #000;
+}
+
+.photo-2 {
+	margin-top: 25px;
+}
+.header-2 {
+	margin-bottom: 20px;
+}
+
+.icons {
+	margin: -8px 20px 15px 0;
+}
+
+.chapter-3 {
+	height: 500px;
+	background-color: #f2f2f2;
+}
+
+.photo-4 {
+	margin-top: -15px;
+}
+
+.categories {
+	list-style: none;
+}
+
+.categories > li p img {
+	margin-right: 10px;
+}
+
+.categories p {
+	font-style: italic;
+	line-height: 30px;
+}
+
+
+.chapter-4 {
+	height: 510px;
+}
+
+.photo-5 {
+	margin-top: 70px;
+}
+
+.categories-2 {
+	list-style: none;
+}
+
+.categories-2 > li p img {
+	margin-right: 20px;
+}
+
+.categories-2 p {
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.right-side {
+	margin-top: 100px;
+}
+
+.chapter-5 {
+	height: 625px;
+	background-color: #f2f2f2;
+}
+
+.chapter-6 {
+	height: 790px;
+}
+
+#footer {
+	height: 200px;
+	background-color: #eeefe9;
+	margin-bottom: 30px;
+}
+
+.content {
+	margin-top: 30px;
+}
+
+.phone {
+	font-size: 30px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+.icon {
+	font-size: 25px;
+}
+
+.icon-odnoklassniki-rect {
+	color: #e2440e;
+}
+
+.icon-facebook {
+	color: #063587;
+}
+
+.icon-vkontakte {
+	color: #43628b;
+}
