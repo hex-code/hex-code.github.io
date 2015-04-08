@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sass training</title>
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+			var mapCanvas = document.getElementById('map-canvas'),
+				myLatlng = new google.maps.LatLng(50.3923148, 24.2391282);
+			var mapOptions = {
+				center: myLatlng,
+				zoom: 17,
+				scrollwheel: false
+			}
+			var map = new google.maps.Map(mapCanvas, mapOptions)
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map
+				// title: 'Hello!'
+			});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+<body>
+		<div class="container-fluid">
+			<div class="navigation">
+				<div class="container">
+				<div class="logo"></div>
+				<div class="menu-icon menu-btn">
+					<!-- <a href="#" class="menu-btn"> -->
+					<!-- <i class="icon-menu-3"></i> -->
+					<!-- </a> -->
+				</div>
+					<ul class="nav_list">
+						<li class="nav_item"><a href="#home">Home</a></li>
+						<li class="nav_item"><a href="#about">About</a></li>
+						<li class="nav_item"><a href="#portfolio">Portfolio</a></li>
+						<li class="nav_item"><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section class="section section-hero" data-item="home">
+			<div class="teaser"></div>
+		</section>
+		<!-- <div class="test-w section container" data-item="home">
+				<a href="#" class="test">Text here</a>
+		</div> -->
+		<section class="teaser-bg"></section>
+			<div class="container-fluid bg_col">
+				<div class="row">
+					<div class="container">
+						<div class="about section" data-item="about">
+							<h1>about</h1>
+							<div class="col-md-3">
+								<h3><i class="icon icon-terminal"></i><br>Technical Skills</h3>
+								<p>Programming Languages: HTML, CSS, JavaScript</p>
+								<p>Libraries and frameworks: JQuery, Sass, Bootstrap</p>
+								<p>Development tools: Google Chrome Developer Tools, Sublime Text 2, Emmet</p>
+								<p>Version control systems: Git</p>
+							</div>
+							<div class="col-md-3">
+								<h3><i class="icon icon-book"></i><br>Education</h3>
+								<p><b>2008-2012 - “Lviv Politechnic National University”. - </b>Bachelor`s degree, Computer Engineering</p>
+								<p><b>2012-2013 - “Lviv Politechnic National University”. - </b>Master`s degree, Specialised Computer Systems</p>
+							</div>
+							<div class="col-md-3">
+								<h3><i class="icon icon-adult"></i><br>Personal qualities</h3>
+								<p>- Responsible</p>
+								<p>- Hard working</p>
+								<p>- Patient</p>
+								<p>- Calm</p>
+							</div>
+							<div class="col-md-3">
+								<h3><i class="icon icon-plus-circled"></i><br>Additional info</h3>
+								<p>Hobbies: games, programming, serials, computer technologies.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio section container" data-item="portfolio">
+				<h1>Portfolio</h1>
+				<ul class="gallery_list">
+					<li class="gallery_item">
+						<img src="https://api.fnkr.net/testimg/250x250/00CED1/FFF/?text=img+placeholder">
+						<div class="description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo eaque eos ab! Nostrum inventore ea consectetur, officia eos voluptatibus. Illum?</p>
+						</div>
+					</li>
+					<li class="gallery_item">
+						<img src="https://api.fnkr.net/testimg/250x250/00CED1/FFF/?text=img+placeholder">
+					</li>
+					<li class="gallery_item">
+						<img src="https://api.fnkr.net/testimg/250x250/00CED1/FFF/?text=img+placeholder">
+					</li>
+					<li class="gallery_item">
+						<img src="https://api.fnkr.net/testimg/250x250/00CED1/FFF/?text=img+placeholder">
+					</li>
+					<li class="gallery_item">
+						<img src="https://api.fnkr.net/testimg/250x250/00CED1/FFF/?text=img+placeholder">
+					</li>
+					<li class="gallery_item">
+						<img src="https://api.fnkr.net/testimg/250x250/00CED1/FFF/?text=img+placeholder">
+					</li>
+				</ul>
+			</div>
+			<div class="container-fluid bg_col">
+				<div class="container">
+					<div class="bio text-center">
+						<img src="img/photo.jpg" alt="bio">
+						<h3>Yaroslav Sava</h3>
+						<p>Front-end Developer</p>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="container">
+					<div class="quote text-left">
+						<p>I did it for me. I liked it. I was good at it. And, I was really ... I was alive. <br></p>
+						<span>-Walter White</span>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row contact-fluid">
+					<section class="contact-bg">
+						<div class="container info">
+							<div class="contact section" data-item="contact">
+									<h1 class="text-center">get in touch</h1>
+									<div class="col-md-6 map hidden-xs hidden-sm">
+										<div id="map-canvas"></div>
+									</div>
+									<div class="col-md-6 text-center contact_info">
+										<h2>Phone | E-mail</h2>
+										<p><span class="phone_num">+38 (095) </span>123-45-67</p>
+										<br>
+										<br>
+										<p>fakeacc@gmail.com</p>
+									</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<section class="footer">
+						<div class="container">
+							<div class="footer-logo">
+								<img src="img/logo.png" alt="logo">
+								<p>2015&copy;</p>
+							</div>
+							<div class="social">
+								<ul>
+									<li><a href="https://www.facebook.com/grozarazor" target="_blank"><i class="icon-facebook-circled"></i></a></li>
+									<li><a href="https://www.linkedin.com/profile/view?id=269017049&trk=nav_responsive_tab_profile_pic" target="_blank"><i class="icon-linkedin-circled"></i></a></li>
+									<li><a href="https://github.com/hex-code" target="_blank"><i class="icon-github-circled"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+	<script>
+	
+	$('.gallery_item').hover(function(){
+		var para = $(this).find('.description');
+			para.fadeToggle(700);
+		});
+	$('.menu-btn').on('click', function() {
+		var nav_list = $('.nav_list');
+		$(nav_list).fadeToggle();
+	});
+	</script>
+	<script>
+		
+	</script>
+	<script src='js/main.js'></script>
+</body>
+</html>
