@@ -3,31 +3,21 @@ $(document).ready(function() {
 		var link = $(this).attr('href');
 			activeSection(link);
 	});
-	$('.image-popup-vertical-fit').magnificPopup({
+	$('.image-popup-no-margins').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
-		mainClass: 'mfp-img-mobile',
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
 		image: {
 			verticalFit: true,
 			cursor: null
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
 		}
-		
 	});
-	// $('.image-popup-no-margins').magnificPopup({
-	// 	type: 'image',
-	// 	closeOnContentClick: true,
-	// 	closeBtnInside: false,
-	// 	fixedContentPos: true,
-	// 	mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-	// 	image: {
-	// 		verticalFit: true,
-	// 		cursor: null
-	// 	},
-	// 	zoom: {
-	// 		enabled: true,
-	// 		duration: 300 // don't foget to change the duration also in CSS
-	// 	}
-	// });
 }());
 
 $(window).scroll(function() {
