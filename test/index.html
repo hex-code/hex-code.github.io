@@ -200,18 +200,10 @@
 			</div>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script>
-	
-	$('.gallery_item').hover(function(){
-		var para = $(this).find('.description');
-			para.fadeToggle(700);
+		$('.menu-btn').on('click', function() {
+			var nav_list = $('.nav_list');
+			$(nav_list).fadeToggle();
 		});
-	$('.menu-btn').on('click', function() {
-		var nav_list = $('.nav_list');
-		$(nav_list).fadeToggle();
-	});
-	</script>
-	<script>
-		
 	</script>
 	<script src='js/main.js'></script>
 </body>
