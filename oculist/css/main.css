@@ -11,16 +11,22 @@ body {
 	font-size: 16px;
 	background-image: url("../img/body-bg.png");
 }
-
+/* ==========================================================================
+   Container for main area of site
+   ========================================================================== */
 .container {
 	width: 1260px;
 	margin: 0 auto;
 }
-
+/* ==========================================================================
+   Box-shadow for header and menu
+   ========================================================================== */
 .menu-shadow {
 	box-shadow: 0 0 8px rgba(0,0,0,.75)
 }
-
+/* ==========================================================================
+   Styles for header
+   ========================================================================== */
 header {
 	height: 106px;
 	background-image: url("../img/header-bg.png");
@@ -115,7 +121,9 @@ header {
 	margin-top: 12px;
 }
 
-
+/* ==========================================================================
+   Styles for menu-navigation
+   ========================================================================== */
 .navigation-bg {
 	background-image: url("../img/menu-bg.png");
 }
@@ -156,7 +164,9 @@ header {
     border: 0;
     background-color: #598536;
 }
-
+/* ==========================================================================
+   Styles for banner
+   ========================================================================== */
 .banner {
 	position: relative;
 	height: 480px;
@@ -189,12 +199,14 @@ header {
 	font-weight: 200;
 	color: #2f6603;
 }
-
+/* ==========================================================================
+   Styles for main content
+   ========================================================================== */
 .content {
 	width: 1000px;
 	overflow: hidden;
 	border-radius: 2px;
-	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	box-shadow: 0 0 5px rgba(0,0,0,.4); /* box-shadow for main-content */
 	margin: 30px auto;
 	padding: 25px;
 	background-color: #f6f6f6;
@@ -216,7 +228,8 @@ section > p {
 	font-size: 14px;
 	width: 560px;
 }
-
+/* Styles for side news
+   ========================================================================== */
 aside {
 	float: right;
 }
@@ -226,7 +239,7 @@ aside {
 	width: 300px;
 	height: 55px;
 	background-image: url("../img/btn-bg.png");
-	box-shadow: 0 0 3px rgba(0,0,0,.75);
+	box-shadow: 0 0 3px rgba(0,0,0,.75); /* box-shadow for buttons in side menu */
 }
 
 .check-sight-1 a, .request a {
@@ -249,7 +262,7 @@ aside {
 	background-image: url("../img/news-bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: 0 0 7px rgba(0,0,0,.75);
+	box-shadow: 0 0 7px rgba(0,0,0,.75); /* box-shadow for news */
 }
 
 .news-content {
@@ -293,6 +306,37 @@ span {
 	background-color: #efefef;
 }
 
+/* ==========================================================================
+   Styles for footer
+   ========================================================================== */
+
+.footer {
+	margin-top: 80px;
+	position: relative;
+	width: 1260px;
+	bottom: 0;
+	background-color: #323232;
+}
+
+.footer-menu {
+	height: 55px;
+	float: left;
+	margin-left: 6px;
+}
+
+.footer-menu li {
+	display: inline-block;
+	line-height: 55px;
+	margin-right: 36px;
+}
+
+.footer-menu li a {
+	font-size: 15px;
+	text-decoration: none;
+	color: #ddd;
+}
+/* Styles for social icons
+   ========================================================================== */
 .social {
 	float: right;
 	margin-right: 80px;
@@ -337,32 +381,8 @@ span {
 	background-position: -128px 0;
 }
 
-.footer {
-	margin-top: 80px;
-	position: relative;
-	width: 1260px;
-	bottom: 0;
-	background-color: #323232;
-}
-
-.footer-menu {
-	height: 55px;
-	float: left;
-	margin-left: 6px;
-}
-
-.footer-menu li {
-	display: inline-block;
-	line-height: 55px;
-	margin-right: 36px;
-}
-
-.footer-menu li a {
-	font-size: 15px;
-	text-decoration: none;
-	color: #ddd;
-}
-
+/* Styles for copyright area
+   ========================================================================== */
 .copyrigth {
 	height: 65px;
 	background-color: #3b3b3b;
