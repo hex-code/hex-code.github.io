@@ -325,7 +325,7 @@ span {
 }
 
 .footer-menu li {
-	display: inline-block;
+	display: inline;
 	line-height: 55px;
 	margin-right: 36px;
 }
