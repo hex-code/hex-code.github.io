@@ -248,7 +248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
     }
 }
 
-@media only screen and (max-device-width:1025px) {
+@media only screen and (max-width:1025px) {
     .wrapper {
         overflow-y: visible;
     }
@@ -256,6 +256,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
         position: relative!important;
         top: 0!important;
         left: 50%!important;
+        -webkit-transform: translate(-50%)!important;
+        -ms-transform: translate(-50%)!important;
         transform: translate(-50%)!important;
         padding-bottom: 3em;
     }
