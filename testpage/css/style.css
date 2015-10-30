@@ -250,7 +250,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
 
 @media only screen and (max-device-width:1025px) {
     .wrapper {
-        overflow-y: visible!important;
+        overflow-y: visible;
     }
     .coin {
         position: relative!important;
