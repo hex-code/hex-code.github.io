@@ -20,7 +20,8 @@ a:hover, a:visited {
 .wrapper {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     position: absolute;
 }
 
@@ -170,11 +171,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
 .fa {
     position: absolute;
     padding: 0.0625em 0;
-    right: 0.4em;
+    right: 0.3em;
 }
 
 .fa2 {
-    right: 1em;
+    right: 0.8em;
 }
 
 .hover-button .button:before, .button:hover:before {
@@ -246,11 +247,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
     .main-area .bonus {
       font-size: 40px;
     }
+    .wrapper {
+        overflow-y: visible!important;
+    }
 }
 
 @media only screen and (max-width:1025px) {
     .wrapper {
-        overflow-y: visible;
+        overflow-y: visible!important;
     }
     .coin {
         position: relative!important;
