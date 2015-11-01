@@ -248,7 +248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', end
       font-size: 40px;
     }
     .wrapper {
-        overflow-y: visible!important;
+        overflow-y: scroll!important;
     }
 }
 
